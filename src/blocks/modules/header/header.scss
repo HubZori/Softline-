@@ -1,0 +1,101 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 85px;
+  }
+
+  &__menu {
+    flex: 1 1 auto;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  &__list {
+    display: flex;
+    gap: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  &__link {
+    color: #444444;
+  }
+}
+/* PC */
+@media (max-width: 1280px) {
+  [class*="__container"] {
+    max-width: 970px;
+    
+  padding: 0px 40px;
+  }
+  .menu__list {
+    gap: 0;
+  }
+  .menu__item {
+    margin-right: 20px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+    
+  padding: 0px 20px;
+  }
+  .menu__list {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .header {
+    &__logo {
+      margin-top: 16px;
+    }
+    &__menu {
+      margin-top: 16px;
+    }
+  }
+}
+/* MOB */
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+    
+  padding: 0px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu__list {
+    font-size: 15px;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 320.98px) {
+  [class*="__container"] {
+    max-width: none;
+    
+  padding: 0px 5px;
+    min-height: 110px;
+  }
+  .header {
+    &__logo {
+      margin-top: 16px;
+    }
+    &__menu {
+      margin-top: 16px;
+    }
+  }
+  .menu__list {
+    font-size: 13px;
+  }
+  .menu__item {
+    margin-right: 7px;
+  }
+}

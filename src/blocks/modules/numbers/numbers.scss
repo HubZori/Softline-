@@ -1,0 +1,75 @@
+.numbers{
+  margin: 100px 0px 100px 0px;
+}
+.number-grid {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 287px;
+  justify-content: center;
+  & .greater {
+    font-size: 64px;
+    margin-right: 10px;
+  }
+  & .years {
+    margin-left: 25px;
+  }
+  & .plus {
+    font-size: 64px;
+    margin-left: 25px;
+  }
+}
+
+.number-item {
+  max-width: 240px;
+  margin: 70px 95px 25px 95px;
+  & .title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+.number-block {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 600;
+  color: #a30c33;
+  max-width: 243px;
+}
+
+
+@media (max-width: 767.98px) {
+  .numbers{
+    
+    margin: 50px 0px 52px 0px;
+  }
+  .number-item{
+    margin: 20px 25px 20px 25px;
+    text-align: center;
+    .title{
+      font-size: 16px;
+    }
+    .number-block{
+      font-size: 40px;
+      justify-content: center;
+      .greater{
+        font-size: 30px;
+      }
+      .plus{
+        font-size: 30px;
+        margin-left: 4px;
+      }
+      .years{
+        font-size: 30px;
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 319.98px) {
+  .number-item{
+    margin: 15px 10px 15px 10px;
+  }
+}
